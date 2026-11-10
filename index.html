@@ -36,16 +36,15 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.015em;margin
 
 .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:22px}
 .brand{font-family:var(--serif);font-size:1.15rem;text-decoration:none}
-.top a.cv{font-size:.92rem;text-decoration:underline;text-decoration-color:var(--beam1);text-underline-offset:5px;text-decoration-thickness:1.5px}
 
 .hero{min-height:calc(100svh - 76px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,72px);align-items:center;padding-bottom:clamp(48px,8vh,96px)}
 .kicker{font-size:.95rem;font-weight:500;color:var(--ink2);margin:0 0 22px;display:flex;align-items:center;gap:12px}
 .kicker::before{content:"";width:32px;height:1.5px;background:linear-gradient(90deg,var(--beam1),var(--beam2))}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.4rem);line-height:1.03;font-weight:300;max-width:16ch}
 .lede{font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.35;color:var(--ink2);margin:26px 0 0;max-width:30ch}
-.facts{list-style:none;margin:34px 0 0;padding:0;max-width:440px;border-top:1px solid var(--rule)}
-.facts li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.98rem;display:flex;gap:14px;align-items:baseline}
-.facts b{font-family:var(--serif);font-weight:500;font-size:1.25rem;min-width:4.2ch;color:var(--ink)}
+.facts{list-style:none;margin:34px 0 0;padding:0;max-width:460px;border-top:1px solid var(--rule);display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:18px}
+.facts li{grid-column:1/-1;display:grid;grid-template-columns:6.4em minmax(0,1fr);grid-template-columns:subgrid;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);font-size:.98rem;line-height:1.5}
+.facts b{font-family:var(--serif);font-weight:500;font-size:1.25rem;line-height:1.2;white-space:nowrap;color:var(--ink)}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:34px}
 .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:500;font-size:1rem;transition:background-color .2s}
 .btn:hover{background:var(--ink2)}
@@ -173,7 +172,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.015em;margin
 <body>
 <header class="wrap top">
   <a class="brand" href="#top">Daniela Perrotta, MD</a>
-  <a class="cv" href="Daniela_Perrotta_CV.pdf" download>CV (PDF)</a>
 </header>
 
 <main id="top">
@@ -183,13 +181,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.015em;margin
     <h1>From engineering to neurosurgery.</h1>
     <p class="lede">I use artificial intelligence to turn images into information a surgeon can use.</p>
     <ul class="facts">
-      <li><b>11</b><span>years in pharmaceutical engineering, up to senior project manager</span></li>
-      <li><b>2026</b><span>MD with honors, University of Naples Federico II</span></li>
+      <li><b>Degrees</b><span>Industrial Engineering and Medicine, both with honors · University of Naples Federico II</span></li>
+      <li><b>10+ years</b><span>in pharmaceutical plant design and project management, progressing to Senior Project Manager</span></li>
       <li><b>USA</b><span>permanent resident, no visa sponsorship needed</span></li>
     </ul>
     <div class="actions">
       <a class="btn" href="#path">My path <span aria-hidden="true">↓</span></a>
-      <a class="tlink" href="Daniela_Perrotta_CV.pdf" download>Download CV</a>
     </div>
   </div>
   <div class="orb-wrap" aria-hidden="true"><div class="orb-ring r2"></div><div class="orb-ring"></div><div class="orb"></div></div>
@@ -363,7 +360,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.015em;margin
       <li>New York, NY</li>
     </ul>
     <div class="actions">
-      <a class="btn btn-l" href="Daniela_Perrotta_CV.pdf" download>Download CV</a>
       <a class="tlink" href="mailto:daniela.perrotta.medicina@gmail.com">daniela.perrotta.medicina@gmail.com</a>
     </div>
     <div class="foot">
